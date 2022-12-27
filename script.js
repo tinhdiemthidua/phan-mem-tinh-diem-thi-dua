@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function sortFunction(a, b) {
-    return a[7] - b[7];
+    return a["Tổng điểm"] - b["Tổng điểm"];
 }
 
 function addClass() {
@@ -154,6 +154,7 @@ function addClass() {
     });
 
     classGrade.sort(sortFunction);
+    console.log(classGrade, classGrade.sort(sortFunction));
 
     document.querySelectorAll("#delete").forEach((e) => {
         e.addEventListener("click", () => {
@@ -161,7 +162,6 @@ function addClass() {
             document.getElementById(`class-${e.getAttribute("data-class")}`).style.display = "none";
         });
     });
-    console.log(classGrade);
 }
 
 function exportData(filename, data) {
