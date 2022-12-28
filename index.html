@@ -25,48 +25,48 @@
 
     <div class="container mt-3">
 
-        <h1>Cập nhật điểm thi đua</h1>
+        <h1 class="text-success">Cập nhật điểm thi đua</h1>
         <div class="text-danger" id="error"></div>
         <form class="mb-2">
             <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text">Tuần thứ: </span>
+                <span class="input-group-text text-danger">Tuần thứ: </span>
                 <input required type="text" class="form-control" id="week">
             </div>
             <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text">Từ ngày: </span>
+                <span class="input-group-text text-danger">Từ ngày: </span>
                 <input required type="text" class="form-control" id="duration"
                     placeholder="Ví dụ: 01/01/2023 - 08/01/2023">
             </div>
             <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text">Lớp: </span>
+                <span class="input-group-text text-danger">Lớp: </span>
                 <input required type="text" id="class-name" class="form-control">
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="vesinh">Vệ sinh</label>
+                    <label for="vesinh" class="text-danger">Vệ sinh</label>
                     <input required type="number" id="vesinh" class="form-control" placeholder="Điểm vệ sinh">
                 </div>
                 <div class="col">
-                    <label for="sh15">Sinh hoạt 15p</label>
+                    <label for="sh15" class="text-danger">Sinh hoạt 15p</label>
                     <input required type="number" id="sh15" class="form-control"
                         placeholder="Điểm sinh hoạt 15p đầu giờ">
                 </div>
                 <div class="col">
-                    <label for="theduc">Thể dục</label>
+                    <label for="theduc" class="text-danger">Thể dục</label>
                     <input required type="number" id="theduc" class="form-control" placeholder="Điểm thể dục">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="nenep">Nề nếp</label>
+                    <label for="nenep" class="text-danger">Nề nếp</label>
                     <input required type="number" id="nenep" class="form-control" placeholder="Điểm nề nếp">
                 </div>
                 <div class="col">
-                    <label for="chuyencan">Chuyên cần</label>
+                    <label for="chuyencan" class="text-danger">Chuyên cần</label>
                     <input required type="number" id="chuyencan" class="form-control" placeholder="Điểm chuyên cần">
                 </div>
                 <div class="col">
-                    <label for="hoctap">Học tập</label>
+                    <label for="hoctap" class="text-danger">Học tập</label>
                     <input required type="number" id="hoctap" class="form-control" placeholder="Điểm học tập">
                 </div>
             </div>
@@ -92,9 +92,9 @@
         <hr>
         <div id="show-list"></div>
 
-        <h1>Tìm kiếm</h1>
+        <h1 class="text-success">Tìm kiếm</h1>
         <div class="mb-2">
-            <span>Danh sách học sinh: </span>
+            <span class="text-danger">Danh sách học sinh: </span>
             <input type="file" id="stuList" />
         </div>
         <input type="text" class="form-control mb-2" placeholder="Tìm tên học sinh" id="stuName">
@@ -103,20 +103,20 @@
         <hr>
 
         <div class="mb-4">
-            <h1>Xuất báo cáo tháng</h1>
-            <div class="mb-2">
+            <h1 class="text-success">Xuất báo cáo tháng</h1>
+            <div class="mb-2 text-danger">
                 <span>Tuần 1: </span>
                 <input type="file" id="week1" />
             </div>
-            <div class="mb-2">
+            <div class="mb-2 text-danger">
                 <span>Tuần 2: </span>
                 <input type="file" id="week2" />
             </div>
-            <div class="mb-2">
+            <div class="mb-2 text-danger">
                 <span>Tuần 3: </span>
                 <input type="file" id="week3" />
             </div>
-            <div class="mb-2">
+            <div class="mb-2 text-danger">
                 <span>Tuần 4: </span>
                 <input type="file" id="week4" />
             </div>
