@@ -172,11 +172,12 @@ function exportData(filename, data) {
 }
 
 function searchStu(rows, studentName) {
+    let found = false;
     rows.splice(0, 7);
     console.log(rows);
     rows.forEach((row) => {
-        console.log(row);
         if (row[1] == studentName) {
+            found = true;
             document.getElementById("studentInfo").innerHTML = `
         <div class="row">            
             <b class="col mb-2">Họ và tên</b>
@@ -199,6 +200,8 @@ function searchStu(rows, studentName) {
             `;
         }
     });
+
+    if (!found) document.getElementById("studentInfo").innerHTML = `<b>Không có học sinh nào</b>`;
 }
 
 function monthlyReport(dataWeek1, dataWeek2, dataWeek3, dataWeek4) {
